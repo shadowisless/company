@@ -1,3 +1,8 @@
+<?php
+session_start();
+include "db.php";
+$produk = $conn->query("SELECT * FROM produk");
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -91,11 +96,6 @@
       color: #93C5FD; /* lighter blue */
     }
   </style>
-<?php
-session_start();
-include "db.php";
-$produk = $conn->query("SELECT * FROM produk");
-?>
 </head>
 <body class="font-sans text-gray-800 bg-white">
   <!-- Navbar -->
