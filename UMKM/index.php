@@ -1,8 +1,3 @@
-<?php
-session_start();
-include "db.php";
-$produk = $conn->query("SELECT * FROM produk");
-?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
